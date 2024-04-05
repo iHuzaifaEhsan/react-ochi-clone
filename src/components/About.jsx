@@ -1,8 +1,8 @@
 import React from "react";
-
+import photo from "./utilis/photo.jpg"
 const About = () => {
   return (
-    <div className="bg-zinc-900">
+    <div className="bg-zinc -mt-20 z-0">
       <div className="w-full p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black">
         <h1 className="font-['Neue_Montreal'] text-[4.5vw] tracking-tight mb-10">
           Ochi is a strategic partner for fast-growing tech businesses that need
@@ -19,7 +19,13 @@ const About = () => {
               <div className="w-2 h-2 bg-zinc-100 rounded-full"></div>
             </button>
           </div>
-          <div className="w-1/2 h-[70vh] bg-[#6d9e27] rounded-3xl"></div>
+          <div className="w-1/2 h-[70vh]  rounded-3xl">
+          <img
+          src={photo}
+          alt="homepage_photo"
+          className="w-1/2 h-full w-screen rounded-3xl bg-cover bg-center"
+        />
+          </div>
         </div>
       </div>
     </div>
