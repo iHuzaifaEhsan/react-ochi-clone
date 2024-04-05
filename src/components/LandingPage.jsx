@@ -13,18 +13,12 @@ const LandingPage = () => {
                 <div className="w-fit flex">
                   {index === 1 && (
                     <motion.div
-                      style={{
-                        backgroundImage: `url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg")`,
-                      }}
-                      initial={{ x: -100 }}
-                      animate={{ x: "0%" }}
-                      transition={{
-                        duration: 1,
-                        type: "spring",
-                        stiffness: 100,
-                      }}
-                      className="mr-[1vw] w-[9vw] rounded-md h-[5.7vw] bg-cover"
-                    ></motion.div>
+                    style={{backgroundImage: `url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg")`,}}
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    className="mr-[1vw] w-[8vw] h-[5.7vw] -top-[0.2vw] relative bg-slate-400 rounded-md bg-cover bg-center"
+                  ></motion.div>
                   )}
                   <motion.h1
                     key={index}

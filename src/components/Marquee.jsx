@@ -1,31 +1,28 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-const Marquee = () => {
+function Marquee() {
   return (
-    <div className="bg-zinc-900">
-      <div className="w-full py-10 rounded-tl-3xl rounded-tr-3xl text-white bg-[#004D43]">
-        <div className="text overflow-hidden border-t-2 gap-10 border-b-2 border-zinc-300 flex whitespace-nowrap">
-          <motion.h1
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
-            className="text-[20vw] leading-none font-['Founders_Grotesk_X_Condensed'] font-semibold uppercase pt-10 -mb-[4vw]"
-          >
-            we are ochi
-          </motion.h1>
-          <motion.h1
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
-            className="text-[20vw] leading-none font-['Founders_Grotesk_X_Condensed'] font-semibold uppercase pt-10 -mb-[4vw]"
-          >
-            we are ochi
-          </motion.h1>
-        </div>
+    <div data-scroll data-scroll-section data-scroll-speed=".2" className=" w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#004D43]">
+      <div className="text border-t-2 border-b-2 border-zinc-300/25 flex whitespace-nowrap text-zinc-100 overflow-hidden">
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 10 }}
+          className='text-[26vw] leading-none uppercase font-semibold font-["Test_Founders_Grotesk_X"] -mb-[3vw] -mt-[5.3vw]'
+        >
+          we are ochi
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 10 }}
+          className='text-[26vw] leading-none uppercase font-semibold font-["Test_Founders_Grotesk_X"] -mb-[3vw] -mt-[5.3vw]'
+        >
+         &nbsp;we are ochi
+        </motion.h1>
       </div>
     </div>
   );
-};
+}
 
 export default Marquee;
